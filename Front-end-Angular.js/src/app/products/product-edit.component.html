@@ -1,0 +1,22 @@
+
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- #form is a template reference variable -->
+                <form #form='ngForm' (submit)="submitForm(form)"  novalidate>
+                    <div class="form-group">
+                        Address: <input  #address='ngModel' type="text" class="form-control" name="address" required [(ngModel)]='product.address' />
+                        Id: <input type="text" class="form-control" name="id" required [(ngModel)]='product.id' />
+                        Name: <input type="text" class="form-control" name="name" required [(ngModel)]='product.name' />
+                        Salary: <input type="text" class="form-control" name="salary" required [(ngModel)]='product.salary' />
+                        <button type="submit" >Submit</button>
+                    </div>     
+                </form>
+                <!-- Products: {{ this.products | json }} -->
+                <br>
+                <!-- Angular: {{ form.value | json }} -->
+            </div>
+        </div>
+    </div>
+</div>
