@@ -59,3 +59,37 @@ $ npm start
 4. Navigate to services Tab beside projects Tab. Then Right-click on servers to add a new server, then choose Apache Tomcat or TomEE and Navigate to the Directory of the Extracted folder of Apache Tomee Plume.
 5. Navigate to Projects Tab and Right-click on EJBRestfulWebService0 --> build. Then EJBRestfulWebService0 --> Run.
 
+# Set up the Development Environment For Database:
+
+  ##### 1.  For Windows/Mac:
+  1. Download [PostgreSQL](https://www.postgresql.org/download/windows/) installer for windows
+      OR [PostgreSQL](https://www.postgresql.org/download/macosx/) installer for Mac.
+  2. Using the graphical tool for managing and developing your databases
+  3. Use default username: postgres and password: 123456
+  4. Create database: mydb , then connect to the mydb database.
+  5. Create table company:
+  ```
+CREATE TABLE COMPANY(
+  ID INT PRIMARY KEY NOT NULL,
+  NAME TEXT NOT NULL,
+  ADDRESS CHAR(50),
+  SALARY REAL
+);
+​
+  ```
+ ##### 2. For Linux:
+ 1. Download and install [PostgreSQL](https://www.postgresql.org/download/) for Your Linux Distribution.
+ 2. Using Terminal:
+    1. Acces a database console in terminal: ``` sudo -u postgres psql postgres ```
+    2. Change password for an existing user postgres (default user): ``` ALTER USER postgres WITH PASSWORD '123456'; ```
+    3. Create a Database: ``` CREATE DATABASE mydb; ```
+    4. Connect to the Database: ``` \c mydb; ```
+    5. Create Table Company:
+    ```
+    CREATE TABLE COMPANY(
+      ID INT PRIMARY KEY NOT NULL,
+      NAME TEXT NOT NULL,
+      ADDRESS CHAR(50),
+      SALARY REAL
+    );
+    ```
