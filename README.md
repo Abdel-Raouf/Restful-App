@@ -41,3 +41,21 @@
 - Delete - To Request that a resource be removed.
 - [Dockerize The Application](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/) - Shipping application on [Docker](https://www.docker.com/).
 
+# Set up the Development Environment For Front-End:
+
+1. Install [Node.js® and npm](https://nodejs.org/en/download/) if they are not already on your machine.
+2. Navigate to [Front-end-Angular.js](https://github.com/Abdel-Raouf/Restful-App/tree/master/Front-end-Angular.js) Directory
+3. Launch the Server: 
+```
+$ npm start
+```
+4. Open your browser on http://localhost:4200
+
+# Set up the Development Environment For Back-End:
+
+1. Install [NetBeans](https://netbeans.org/downloads/) 
+2. Download [Apache TomEE plume](http://tomee.apache.org/download-ng.html) and Extract Files. 
+3. Open NetBeans and Navigate To: File --> Open Project --> [Back-End-Java](https://github.com/Abdel-Raouf/Restful-App/tree/master/Back-end-Java) Directory.
+4. Navigate to services Tab beside projects Tab. Then Right-click on servers to add a new server, then choose Apache Tomcat or TomEE and Navigate to the Directory of the Extracted folder of Apache Tomee Plume.
+5. Navigate to Projects Tab and Right-click on EJBRestfulWebService0 --> build. Then EJBRestfulWebService0 --> Run.
+
