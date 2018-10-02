@@ -20,6 +20,10 @@
 
 [Representational State Transfer (REST)](https://spring.io/understanding/REST) - REST as an approach to developing web services as an alternative to other distributed-computing specifications such as [SOAP](https://www.tutorialspoint.com/soap/what_is_soap.htm). 
 
+**More** *Calrification*:
+
+[Main_points.pdf](https://github.com/Abdel-Raouf/Restful-App/blob/master/main_points.pdf).
+
 #Feel free to contribute
 
 ![App look](https://github.com/Abdel-Raouf/Restful-App/blob/master/images/Screenshot%20from%202018-10-01%2006-54-41.png)
@@ -35,5 +39,5 @@
 
 - PUT - To Update an existing entity.
 - Delete - To Request that a resource be removed.
-- [Dockerize The Application](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/) - Shipping application on [Docker](https://www.docker.com/) 
+- [Dockerize The Application](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/) - Shipping application on [Docker](https://www.docker.com/).
 
