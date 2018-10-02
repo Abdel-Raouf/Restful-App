@@ -1,8 +1,0 @@
-0:0:0:0:0:0:0:1 - - [27/Aug/2018:09:33:00 +0200] "GET /original-EJBRestfulWebService0-1.0-SNAPSHOT/webresources/CounterServiceRest/getAllCustomer HTTP/1.1" 404 1192
-0:0:0:0:0:0:0:1 - - [27/Aug/2018:09:33:45 +0200] "GET /original-EJBRestfulWebService0-1.0-SNAPSHOT/webresources/CounterServiceRest/getAllCustomer HTTP/1.1" 404 1192
-0:0:0:0:0:0:0:1 - - [27/Aug/2018:11:19:05 +0200] "GET /original-EJBRestfulWebService0-1.0-SNAPSHOT/webresources/CounterServiceRest/getAllCustomer HTTP/1.1" 404 1192
-0:0:0:0:0:0:0:1 - - [27/Aug/2018:11:20:46 +0200] "GET /original-EJBRestfulWebService0-1.0-SNAPSHOT/webresources/CounterServiceRest/getAllCustomer HTTP/1.1" 404 1192
-0:0:0:0:0:0:0:1 - - [27/Aug/2018:11:25:16 +0200] "GET /original-EJBRestfulWebService0-1.0-SNAPSHOT/webresources/CounterServiceRest/getAllCustomer HTTP/1.1" 404 1192
-0:0:0:0:0:0:0:1 - - [27/Aug/2018:11:25:19 +0200] "GET /original-EJBRestfulWebService0-1.0-SNAPSHOT/webresources/CounterServiceRest/getAllCustomer HTTP/1.1" 404 1192
-0:0:0:0:0:0:0:1 - - [27/Aug/2018:11:25:22 +0200] "GET /original-EJBRestfulWebService0-1.0-SNAPSHOT/webresources/CounterServiceRest/getAllCustomer HTTP/1.1" 404 1192
-0:0:0:0:0:0:0:1 - - [27/Aug/2018:12:00:39 +0200] "GET /original-EJBRestfulWebService0-1.0-SNAPSHOT/webresources/CounterServiceRest/getAllCustomer HTTP/1.1" 404 1192
