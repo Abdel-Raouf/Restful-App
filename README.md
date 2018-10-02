@@ -1,6 +1,6 @@
 # Learn How to Develop A Restful Web Apps
 
-**using** the following *technologies*: 
+**Using** the following *technologies*: 
 
 [Angular.js](https://angular.io/) - Google's Open-Source Javascript Framework for building user interfaces.
 
@@ -16,6 +16,10 @@
 
 [PostgreSQL](https://www.postgresql.org/) - PostgreSQL is a powerful, open source object-relational database system which has a strong reputation for reliability, feature robustness, and performance.
 
+**Using** the following Architecture style:
+
+[Representational State Transfer (REST)](https://spring.io/understanding/REST) - REST as an approach to developing web services as an alternative to other distributed-computing specifications such as [SOAP](https://www.tutorialspoint.com/soap/what_is_soap.htm). 
+
 #Feel free to contribute
 ![App look](https://github.com/Abdel-Raouf/Restful-App/blob/master/Screenshot%20from%202018-10-01%2006-54-41.png)
 ![App look](https://github.com/Abdel-Raouf/Restful-App/blob/master/Screenshot%20from%202018-10-01%2006-53-51.png)
@@ -30,5 +34,5 @@
 
 - PUT - To Update an existing entity.
 - Delete - To Request that a resource be removed.
-- Docker - Shipping application on Docker 
+- Docker - Shipping application on [Docker](https://www.docker.com/) 
 
