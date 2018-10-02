@@ -44,7 +44,7 @@
 # Set up the Development Environment For Front-End:
 
 1. Install [Node.js® and npm](https://nodejs.org/en/download/) if they are not already on your machine.
-2. Navigate to [Front-end-Angular.js](https://github.com/Abdel-Raouf/Restful-App/tree/master/Front-end-Angular.js) Directory
+2. Navigate to [Front-end-Angular.js](https://github.com/Abdel-Raouf/Restful-App/tree/master/Front-end-Angular.js) Directory using Terminal(Linux/Mac) or CMD(Windows).
 3. Launch the Server: 
 ```
 $ npm start
