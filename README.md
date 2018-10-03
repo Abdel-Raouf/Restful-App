@@ -39,7 +39,7 @@
 
 - PUT - To Update an existing entity.
 - Delete - To Request that a resource be removed.
-- [Dockerize The Application](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/) - Shipping application on [Docker](https://www.docker.com/).
+- [Dockerize The Application](https://github.com/docker/labs) - Shipping application on [Docker](https://www.docker.com/).
 
 # Set up the Development Environment For Front-End:
 
