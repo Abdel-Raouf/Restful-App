@@ -7,7 +7,9 @@ import { ProductService } from './product.service';
 // decorator
 @Component ({
     selector: 'pm-products',
-    templateUrl: './product-list.component.html'
+    templateUrl: './product-list.component.html',
+    // encapsulating style related tot he component
+    styleUrls: ['./product-list.component.css']
 })
 
 // component with it's properties and method

@@ -5,35 +5,14 @@
         {{pageTitle}}
     </div>
     <div class="panel-body">
-        <!-- <div class="row">
-            <div class="col-md-1">Filter By:</div>
-            <!-- [(ngModel)]='listFiler' here we use [] as we use property binding and then () as we bind an event so it become [()] as a two way binding -->
-            <!-- <div class="col-md-2">
-                <input type="text" [(ngModel)]='listFilter' >
-            </div> -->
-        <!-- </div>  -->    
-        
-        <!-- <div class="row">
-            <div class="col-md-6">
-                <h3>Filtered by: {{listFilter}} </h3>
-            </div>
-        </div> -->
         <div class="table-responsive">
             <table class="table" *ngIf='products && products.length'>
                 <thead>
                     <tr>
-                        <!-- <th>
-                            <button class="btn btn-primary" 
-                                (click)='toggleImage()'
-                            >
-                                {{showImage ? 'Hide Image' : 'Show Image'}}
-                            </button>
-                        </th> -->
                         <th>Address</th>
                         <th>Id</th>
                         <th>Name</th>
                         <th>Salary</th>
-                        <!-- <th>5 Star Rating</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -41,19 +20,10 @@
                     <!-- using an ngFor we repeat this table rows and columns for each product  in the list of products -->
                     <!-- we used for...of instead of for..in as we need to iterabe over the object themselves not their properties -->
                     <tr *ngFor='let product of products'>
-                        <!-- <td>
-                            <img    *ngIf='showImage'
-                                    [src]='product.imageUrl' 
-                                    [title]='product.productName'
-                                    [style.width.px]='imageWidth'
-                                    [style.margin.px]='imageMargen'
-                            >
-                        </td> -->
                         <td>{{ product.address }}</td>
                         <td>{{ product.id }}</td>
                         <td>{{ product.name }}</td>
                         <td>{{ product.salary | currency:'USD':true:'1.2-2' }}</td>
-                        <!-- <td>{{ product.starRating }}</td> -->
                     </tr>
                 </tbody>
             </table>

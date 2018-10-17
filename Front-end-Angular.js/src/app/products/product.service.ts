@@ -23,7 +23,7 @@ export class ProductService {
     }
     // to retrive items form the webservice. 
     getProducts(): Observable<IProduct[]> {
-        // get method generic(accept any data type secified in the interface) parameter, since we expecting an array of product object we set the generic to an array
+        // get method generic(accept any data type sepcified in the interface) parameter, since we expecting an array of product object we set the generic to an array
         // get method then automatically maps the respose object returned from the backend server to the defined type.
         return this._http.get<IProduct[]>(this._productUrl)
         .do(data => console.log('All: ' + JSON.stringify(data)))
