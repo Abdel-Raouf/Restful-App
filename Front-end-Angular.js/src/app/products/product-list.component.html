@@ -22,7 +22,7 @@
                     <tr *ngFor='let product of products'>
                         <td>{{ product.address }}</td>
                         <td>{{ product.id }}</td>
-                        <td>{{ product.name }}</td>
+                        <td>{{ product.name | convertToSpaces: '-'}}</td>
                         <td>{{ product.salary | currency:'USD':true:'1.2-2' }}</td>
                     </tr>
                 </tbody>

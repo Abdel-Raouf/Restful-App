@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './products/product.service';
 import {RouterModule} from '@angular/router'
 import { WelcomeComponent } from './home/welcome.component';
+import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { WelcomeComponent } from './home/welcome.component';
     AppComponent,
     ProductListComponent,
     ProductEditComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ConvertToSpacesPipe
   ],
   // includes browser module so the application can run correctly in the browser and in general to pulling in any externel modules
   imports: [
