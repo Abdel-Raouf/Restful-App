@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { IProduct } from './product';
 import { ProductService } from './product.service';
@@ -13,25 +13,21 @@ import { ProductService } from './product.service';
 })
 
 // component with it's properties and method
-export class ProductListComponent {
+// implements lifecycle hook interface OnInit on the component
+export class ProductListComponent implements OnInit{
     [x: string]: any;
     pageTitle: string='Employees List';
     errorMessage: string;
-    
 
-    
+
+
     // we now can perform all our data-binding in this property.
     products: IProduct[] = [];
-    
+
 
     constructor(private _productService: ProductService) {
 
     }
-
-    // onRatingClicked(message: string): void {
-    //     this.pageTitle = 'Product List: ' + message;
-    // }
-
 
     submitForm(form: NgForm) {
         // console.log(form.value); 
@@ -45,6 +41,7 @@ export class ProductListComponent {
 
     // we cust the error returned to any data type.
     // ngOnInit() fires when the server starts, so we use the get-method inside it.
+    // component lifecycle hook to tap into the lifecycle point that is after the component created shortly
     ngOnInit(): void {
         this._productService.getProducts()
         .subscribe(products => {
@@ -53,7 +50,5 @@ export class ProductListComponent {
             error => this.errorMessage = <any>error,
         );
         
-    }
-
-    
+    }   
 }
