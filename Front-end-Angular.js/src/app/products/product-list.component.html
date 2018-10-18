@@ -7,7 +7,7 @@
     <div class="panel-body">
         <div class="table-responsive">
             <div class="form-group" >
-                <input type="text" class="form-control" [(ngModel)]='listFilter' id="search" placeholder="Search Employees" >
+                <input type="text" class="form-control" [ngModel]='listFilter | convertToSpaces: " "' (ngModelChange)='listFilter=$event' id="search" placeholder="Search Employees" >
             </div>
             <table class="table" *ngIf='products && products.length'>
                 <thead>
