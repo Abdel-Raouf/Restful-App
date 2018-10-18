@@ -6,6 +6,9 @@
     </div>
     <div class="panel-body">
         <div class="table-responsive">
+            <div class="form-group" >
+                <input type="text" class="form-control" [(ngModel)]='listFilter' id="search" placeholder="Search Employees" >
+            </div>
             <table class="table" *ngIf='products && products.length'>
                 <thead>
                     <tr>
@@ -19,7 +22,7 @@
                     <!-- there is a difference between of and in here -->
                     <!-- using an ngFor we repeat this table rows and columns for each product  in the list of products -->
                     <!-- we used for...of instead of for..in as we need to iterabe over the object themselves not their properties -->
-                    <tr *ngFor='let product of products'>
+                    <tr *ngFor='let product of filteredProducts'>
                         <td>{{ product.address }}</td>
                         <td>{{ product.id }}</td>
                         <td>{{ product.name | convertToSpaces: '-'}}</td>

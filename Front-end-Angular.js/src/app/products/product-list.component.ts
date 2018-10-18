@@ -19,14 +19,29 @@ export class ProductListComponent implements OnInit{
     pageTitle: string='Employees List';
     errorMessage: string;
 
+    _listFilter: string;
+    get listFilter(): string {
+        return this._listFilter;
+    }
+    set listFilter(value:string){
+        this._listFilter = value;
+        this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
+    }
 
+    filteredProducts: IProduct[];
 
     // we now can perform all our data-binding in this property.
     products: IProduct[] = [];
 
-
+    // dependency injection and IOC
     constructor(private _productService: ProductService) {
+        
+    }
 
+    performFilter(filterBy: string): IProduct[] {
+        filterBy = filterBy.toLocaleLowerCase();
+        return this.products.filter((product: IProduct) =>
+            product.name.toLocaleLowerCase().indexOf(filterBy) !== -1)
     }
 
     submitForm(form: NgForm) {
@@ -46,6 +61,7 @@ export class ProductListComponent implements OnInit{
         this._productService.getProducts()
         .subscribe(products => {
             this.products = products;
+            this.filteredProducts = this.products;
         },
             error => this.errorMessage = <any>error,
         );
